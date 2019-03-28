@@ -20,7 +20,7 @@ class VirtuoozaPost extends StatelessWidget {
             new FadeInImage.memoryNetwork(
               placeholder: kTransparentImage,
               image: post["featured_media"] == 0
-                  ? Image.asset('assets/images/placeholder.jpg')
+                  ? 'images/placeholder.png' 
                   : post["_embedded"]["wp:featuredmedia"][0]["source_url"],
             ),
             new HtmlView(data: post['content']['rendered'])
